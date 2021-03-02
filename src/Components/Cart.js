@@ -14,7 +14,7 @@ function Cart() {
               { output =cartItem.reduce((sum,record) => {
                 let data = sum.findIndex((e)=>e.id===record.id);
                 if(data===-1){
-                  sum.push({id: record.id, finalAmt: record.finalAmt, finalQty:record.finalQty,img:record.img,title:record.title});
+                  sum.push({id: record.id, finalAmt: record.finalAmt, finalQty:record.finalQty,img:record.image,title:record.title});
                 } 
                 else{ 
                   sum[data].finalAmt += (record.finalAmt);
@@ -54,7 +54,7 @@ function Cart() {
                            <div key={key.id}>
                              <Row className="border border-primary p-2">
                                <Col md={2} xs={12} className="p-3 clearfix visible-xs-block">
-                                 <img className="w-50 mh-50" src={key.img} alt={key.img} />
+                                 <img className="w-50 mh-50" src={key.image} alt={key.image} />
                                </Col>
                                <Col md={4} xs={12} className="py-5 mx-auto  text-left">{key.title}</Col>
                                <Col md={3} xs={12} className="py-5 mx-auto  text-center">{key.finalQty}</Col>
