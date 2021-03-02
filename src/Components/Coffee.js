@@ -11,11 +11,24 @@ class Coffee extends Component {
     const urlpath = parseInt((url.match(/(\d+)/g)));
     super(props);
     this.state = {
-      coffeeProduct: Product,
+      eCommerce: [],
       myUrl: urlpath,
       Shop: 1,
       switchButton: true,
     };
+  }
+
+  componentDidMount() {
+    fetch('https://fakestoreapi.com/products')
+            .then(res=>res.json())
+            .then(json=>{
+              console.log(json)
+              this.setState({eCommerce:json})
+            })
+    // axios.get('/ServiceNailAPI/').then((res) => {
+    //   const services = res.data;
+    //   this.setState({ services });
+    // });
   }
 
   render() {
@@ -23,7 +36,7 @@ class Coffee extends Component {
       case this.state.Shop === this.state.myUrl: {
         return (
           <>
-            <Shop product={this.state.coffeeProduct} />
+            <Shop product={this.state.eCommerce} />
           </>
         );
       }
@@ -32,7 +45,7 @@ class Coffee extends Component {
                 <>
                 <Jumbotron/>
                 <div className="container">
-                <Home product={this.state.coffeeProduct} />
+                <Home product={this.state.eCommerce} />
                 </div>
                 </>
                 )

@@ -43,14 +43,13 @@ function Home(props) {
     <CardDeck>
       {shuffleArray(props.product).slice(0,3).map((key) => (
           <Card className="col-lg-4" key={key.id}>
-            <Card.Img  variant="top" src={key.img} onClick={() => {handleKey(key.id);handleClick(!isToggleOn)}}
+            <Card.Img  variant="top" src={key.image} onClick={() => {handleKey(key.id);handleClick(!isToggleOn)}}
                         key={key.id} />
             <Card.Body>
               <Card.Title className="text-uppercase">{key.title}</Card.Title>
-              <Card.Text>{key.description}</Card.Text>
             </Card.Body>
             <Card.Footer>
-              <small className="text-muted">{key.price[0].toFixed(2)}</small>
+              <small className="text-muted">{key.price.toFixed(2)}</small>
             </Card.Footer>
           </Card>
       ))}
