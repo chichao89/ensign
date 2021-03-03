@@ -1,13 +1,13 @@
 # ensign
 # Assignment 1
 -To run
-use a code editor to run the html file via liveserver or normal browser.
+1. use a code editor to run the html file via liveserver or normal browser.
 -Design 
-Assumptions - I have based on what i understand about components and tried to replicate as similar as closely as I could. The contents are hardcoded and the images are refer from internet address links for simplicity purposes.
-1. I have created with a format that is meant to be responsive friendly. There will be a container, followed by a header section and the card sections.  The css will be targeted into this 3 different components and the idea is to only try to reuse as much classes as possible.
-2. For the header component, i had try to divide the whole header into 3 cols to adjust accordingly. 
-3. After the header component, i created another row and divide the cols into equal widths for the headings
-4. For the card component , there is a card component created by grid template cols and it will be auto fit based on the pixels provided. The idea is to make it have easily usable and nice to see with the color and simple icons.
+2. Assumptions - I have based on what i understand about components and tried to replicate as similar as closely as I could. The contents are hardcoded and the images are refer from internet address links for simplicity purposes.
+3. I have created with a format that is meant to be responsive friendly. There will be a container, followed by a header section and the card sections.  The css will be targeted into this 3 different components and the idea is to only try to reuse as much classes as possible.
+4. For the header component, i had try to divide the whole header into 3 cols to adjust accordingly. 
+5. After the header component, i created another row and divide the cols into equal widths for the headings
+6. For the card component , there is a card component created by grid template cols and it will be auto fit based on the pixels provided. The idea is to make it have easily usable and nice to see with the color and simple icons.
 Please find the css,html and the working image shown.
 ![Assignmen1Image](Assignment1/Assignment1.png)
 
