@@ -1,5 +1,6 @@
 * {box-sizing: border-box;}
 
+/* body css */
 body {
     margin: 0 auto;	
 	margin: 0;
@@ -10,9 +11,17 @@ body {
     background-color: #F7F8F9;
 }
 
+/* default css */
+header,
+footer {
+	text-align: center;
+}
+
 .container {
 	width: 100%;
   }
+
+/*navbar css*/
 .navbar{
   overflow: hidden;
   position: relative;
@@ -23,27 +32,27 @@ body {
   background-color: #FFFFFF;
 }
 
+.navbar-brand{
+	display: inline-block;
+	padding-top: .3125rem;
+	padding-bottom: .3125rem;
+	margin-right: 1rem;
+	font-size: 1.25rem;
+	line-height: inherit;
+	white-space: nowrap;
+	}
+
+/*to control the size of the apple image css*/
 .apple{
 	width:30%;
 	height:20%;
 }
 
-.icon{
-	height:100%;
-	width:100%;
-	border: none; /* Prevent double borders */
-	cursor: default;
-}
-
+/*to control the header size of the apple image css*/
 #header-e1 {
     float: left;
     width:20%;
 	border-right: 5px solid grey;
-}
-
-#header-e2 {
-    float: left;
-    width:5%;
 }
 
 #header-e3 {
@@ -52,7 +61,6 @@ body {
 	border : 1px dotted ;
 
 }
-
 
 #header-e3 input[type=text]{
 	height:100%;
@@ -69,26 +77,14 @@ body {
     float: left;
     width:10%;
 }
+
+/*to control the size of the iconprofile image css*/
 .iconprofile {
 	height:50%;
 	width:50%;
 }
 
-.navbar-brand{
-	display: inline-block;
-	padding-top: .3125rem;
-	padding-bottom: .3125rem;
-	margin-right: 1rem;
-	font-size: 1.25rem;
-	line-height: inherit;
-	white-space: nowrap;
-	}
-
-header,
-footer {
-	text-align: center;
-}
-
+/* Create the rol col for the middle section words. */
 #row-e1{
   overflow: hidden;
   position: relative;
@@ -104,7 +100,7 @@ footer {
 	font-size: 40px;
 }
 
-/* Create a responsive, centered, three-column grid. */
+/* Create a responsive, centered, three-column grid for bigger screens */
 @media only screen and (min-width:1300px){
 .card-container {
 	align-items: start;
@@ -135,6 +131,7 @@ footer {
 	font-size: 50px;
 }
 
+/*to control the wordings and color*/
 h1,h2{
     margin: 0;
     padding: 5em 0;
@@ -172,6 +169,8 @@ h4 p{
 	float:left;
 	padding-left: 1.65rem;
 }
+
+/*for smaller screens*/
 @media only screen and (max-width: 1300px){
 	.card-container {
 		align-items: start;
