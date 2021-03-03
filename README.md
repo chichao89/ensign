@@ -14,26 +14,26 @@ Please find the css,html and the working image shown.
 2. do npm install 
 3. npm start 
 4. Website should run on local host.
-Assumptions - Use React Bootstrap for the design and layout with scss used to customize any styling or bootstrap features
-Home, Jumbotron, Navigation, Footer, ECommerce, Cart,Shop are the different components used in this project.
-The pages are routed via routing to serve the different components
-I have Used composition concept to pass the state for the ECommerce Component to ECommerce Details and Home Page.
-ECommerce Details page has a toggle switch to close and open to go back to the ECommerce products.
-Validation errors and some bugs were not handled due to time contraints.
-There is a bug inside add to cart where it is not able to detect the number of items correctly in the cart, there may be 2 cart items but cart will show 5, it is due to the the item object being created each time while being added in the application storage. However it is able to detect different cart items and show the total amount and qty correctly. 
-The storage is via the local storage session so there is some peristance in the form of data stored however deletion needs to be handled after some time.
-The API is called via the fakeapistore to retrieve the number of items.
-There is also a button to load more items if needed.
-For state management, i have tried to use props and to pass them from components to component data. 
-![Assignmen2Image1](Assignment2/Home.png)
+6. Assumptions - Use React Bootstrap for the design and layout with scss used to customize any styling or bootstrap features
+7. Home, Jumbotron, Navigation, Footer, ECommerce, Cart,Shop are the different components used in this project.
+8. The pages are routed via routing to serve the different components
+9. I have Used composition concept to pass the state for the ECommerce Component to ECommerce Details and Home Page.
+10. ECommerce Details page has a toggle switch to close and open to go back to the ECommerce products.
+11. Validation errors and some bugs were not handled due to time contraints.
+12. There is a bug inside add to cart where it is not able to detect the number of items correctly in the cart, there may be 2 cart items but cart will show 5, it is due to the the item object being created each time while being 14.added in the application storage. However it is able to detect different cart items and show the total amount and qty correctly. 
+13. The storage is via the local storage session so there is some peristance in the form of data stored however deletion needs to be handled after some time.
+14. The API is called via the fakeapistore to retrieve the number of items.
+15. There is also a button to load more items if needed.
+16. For state management, i have tried to use props and to pass them from components to component data. 
+![Assignmen2Image1](Assignment2/Home.PNG)
 ------------------------------------------
-![Assignmen2Image2](Assignment2/Product.png)
+![Assignmen2Image2](Assignment2/Product.PNG)
 -------------------------------------------
-![Assignmen2Image3](Assignment2/ProductDetails.png)
+![Assignmen2Image3](Assignment2/ProductDetails.PNG)
 -------------------------------------------------------
-![Assignmen2Image4](Assignment2/AddtoCart.png)
+![Assignmen2Image4](Assignment2/AddtoCart.PNG)
 -------------------------------------------------------
-![Assignmen2Image5](Assignment2/AddToCartDetails.png)
+![Assignmen2Image5](Assignment2/AddToCartDetails.PNG)
 
 
 
