@@ -19,7 +19,7 @@ const NavigationBar = () => {
   return (
     <React.Fragment>
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="sticky-top">
-        <Navbar.Brand as={Link} to="/">J's Coffee</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/">J's Ecommerce</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mx-auto">

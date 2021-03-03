@@ -15,16 +15,11 @@ const Jumbotron = () => {
             loop={Infinity}
             wrapper='span'
             steps={[
-                ' a black Coffee',
-                1000,
-                ' a Cappucino',
-                2000,
-                ' an Expresso',
-                3000,
-                ' an iced Mocha',
+                ' a Shopping therapy',
                 4000,
-                ' an Americano',
-                5000
+                ' a Budget Purchase',
+                4000,
+                ' a Convenient Delivery'
             ]}/>
                 </h1>
         <h5 className="text-white">Connecting to the local community</h5>

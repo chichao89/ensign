@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Card from "react-bootstrap/Card";
+import CardDeck from "react-bootstrap/CardDeck";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import CoffeeDetails from "./CoffeeDetails";
@@ -70,9 +71,10 @@ class Shop extends Component {
           </Row>
 
           <Row>
+          <CardDeck>
             {product.slice(0, this.state.limit).map((key) => (
-              <div className="col-lg-4" key={key.id}>
-                <Card>
+              <div className="col-lg-4 my-5"  key={key.id}>
+                <Card className="h-100">
                   <Card.Img
                     src={key.image}
                     variant="top"
@@ -91,6 +93,7 @@ class Shop extends Component {
                 </Card>
               </div>
             ))}
+            </CardDeck>
           </Row>
           {this.state.limit >= length ? null : (
             <div className="m-5">

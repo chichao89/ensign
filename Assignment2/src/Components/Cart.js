@@ -11,10 +11,12 @@ function Cart() {
               let total = 0;
               let output = [];
               if (cartItem.length !== 0)
-              { output =cartItem.reduce((sum,record) => {
+              {output =cartItem.reduce((sum,record) => {
+                console.log(record)
                 let data = sum.findIndex((e)=>e.id===record.id);
                 if(data===-1){
                   sum.push({id: record.id, finalAmt: record.finalAmt, finalQty:record.finalQty,img:record.image,title:record.title});
+                  console.log(sum)
                 } 
                 else{ 
                   sum[data].finalAmt += (record.finalAmt);

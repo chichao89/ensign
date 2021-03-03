@@ -1,0 +1,183 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0 auto;	
+	margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: 'Oswald', sans-serif;
+    color: #202020;
+    background-color: #F7F8F9;
+}
+
+.container {
+	width: 100%;
+  }
+.navbar{
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+  background-color: #FFFFFF;
+}
+
+.apple{
+	width:30%;
+	height:20%;
+}
+
+.icon{
+	height:100%;
+	width:100%;
+	border: none; /* Prevent double borders */
+	cursor: default;
+}
+
+#header-e1 {
+    float: left;
+    width:20%;
+	border-right: 5px solid grey;
+}
+
+#header-e2 {
+    float: left;
+    width:5%;
+}
+
+#header-e3 {
+    float: left;
+    width:60%;
+	border : 1px dotted ;
+
+}
+
+
+#header-e3 input[type=text]{
+	height:100%;
+	width:95%;
+	border:none;
+}
+
+#header-e4 {
+    width:10%;
+	margin: auto;
+}
+
+#header-e5 {
+    float: left;
+    width:10%;
+}
+.iconprofile {
+	height:50%;
+	width:50%;
+}
+
+.navbar-brand{
+	display: inline-block;
+	padding-top: .3125rem;
+	padding-bottom: .3125rem;
+	margin-right: 1rem;
+	font-size: 1.25rem;
+	line-height: inherit;
+	white-space: nowrap;
+	}
+
+header,
+footer {
+	text-align: center;
+}
+
+#row-e1{
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color:  #F7F8F9;
+}
+#col-e{
+	width:33%;
+	text-align: center;
+	font-size: 40px;
+}
+
+/* Create a responsive, centered, three-column grid. */
+@media only screen and (min-width:1300px){
+.card-container {
+	align-items: start;
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: repeat(auto-fit, 500px);
+	justify-content: center;
+	
+}
+}
+
+.card {
+	background-color: white;
+	border-radius: 5px;
+	color: black;
+	padding: 24px 0 16px;
+	text-align: center;
+	text-shadow: 1px 1px 0 #555;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.fas {
+	font-size: 50px;
+}
+
+h1,h2{
+    margin: 0;
+    padding: 5em 0;
+}
+
+h3{
+	margin-bottom: 1.75rem;
+	text-align: left;
+	padding-left: 1.65rem;
+}
+p{
+	text-align:left;
+	padding-left: 1.65rem;
+}
+h4{
+	float:right;
+	padding-right:2.5rem;
+	text-align:right;
+	color: blue;
+}
+
+h4 p{
+	float:right;
+	text-align:right;
+	color: green;
+}
+
+.purple{
+	color: purple;
+}
+
+
+.youtube{
+	width:20%;
+	float:left;
+	padding-left: 1.65rem;
+}
+@media only screen and (max-width: 1300px){
+	.card-container {
+		align-items: start;
+		display: grid;
+		grid-gap: 2rem;
+		grid-template-columns: repeat(auto-fit, 300px);
+		justify-content: center;
+	}
+}

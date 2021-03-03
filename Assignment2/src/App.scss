@@ -24,6 +24,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
 .h2text {
         font-family: 'Bebas Neue',sans-serif;
         font-size: 5.4rem;
@@ -66,7 +67,7 @@ body {
 .jumbotron-fluid{
   background-image:
   linear-gradient(to top, rgba(245, 246, 252, 0.52), rgba(41, 38, 40, 0.73)),
-  url('./Assets/coffee.jpg');
+  url('https://images.unsplash.com/photo-1522204523234-8729aa6e3d5f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
   background-size: cover;
   background-position: bottom;
   width: 100%;

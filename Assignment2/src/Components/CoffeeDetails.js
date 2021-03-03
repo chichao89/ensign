@@ -12,6 +12,7 @@ function CoffeeDetails(props) {
     let [final, setFinal] = useState(1)
     //let [isLoaded,setLoaded] = useState(false)
     let arrayItem = JSON.parse(localStorage.getItem('original')) || []  //olditem
+    console.log(arrayItem)
     let cartLength = JSON.parse(localStorage.getItem('length')) || [] //for length
     const [cart, setCart] = useState([])
     let [cartTotal, setCartTotal] = useState(0);
@@ -27,6 +28,7 @@ function CoffeeDetails(props) {
     };
 
     const [more] = cart
+
     
 
     arrayItem.push(more)
@@ -52,7 +54,7 @@ function CoffeeDetails(props) {
           <Col lg={5}>
           <div className="m-1"><h6 className="text-uppercase font-weight-bold text-left">Quantity</h6></div>
           <div className="mx-auto float-left">
-          <input className="form-control" type='text' value={selected.finalQty=final} onChange={(e)=> setFinal(final = e.target.value)}/>
+          <input className="form-control" type='text' value={selected.finalQty=parseInt(final)} onChange={(e)=> setFinal(final = e.target.value)}/>
           {(final >= selected.quantity) ? 
             <div className="text-danger text-left">{selected.quantity} quantities available only</div>
             : null
@@ -84,52 +86,6 @@ function CoffeeDetails(props) {
             <Col>
           <div className="m-3"><hr/></div>
           </Col>
-          </Row>
-          <Row>
-            <Col>
-            <div className="m-3"><h5 className="text-uppercase text-left">Character</h5></div>
-            <div className="m-3"><p className="single text-justify">{selected.description}</p></div>
-          </Col>
-          </Row>
-          <Row>
-            <Col lg={3}>
-            <div className="m-3"><p className="text-uppercase text-left font-weight-bold">Farmers</p></div>
-            </Col>
-            <Col>
-            <div className="m-3"><p className="text-uppercase text-left">{selected.farmers}</p></div>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={3}>
-            <div className="m-3"><p className="text-uppercase text-left font-weight-bold">Region</p></div>
-            </Col>
-            <Col>
-            <div className="m-3"><p className="text-uppercase text-left">{selected.region}</p></div>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={3}>
-            <div className="m-3"><p className="text-uppercase text-left font-weight-bold">Origin</p></div>
-            </Col>
-            <Col>
-            <div className="m-3"><p className="text-uppercase text-left">{selected.origin}</p></div>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={3}>
-            <div className="m-3"><p className="text-uppercase text-left font-weight-bold">Havest</p></div>
-            </Col>
-            <Col>
-            <div className="m-3"><p className="text-uppercase text-left">{selected.harvest}</p></div>
-            </Col>
-          </Row>
-          <Row>
-            <Col lg={3}>
-            <div className="m-3"><p className="text-uppercase text-left font-weight-bold">Process</p></div>
-            </Col>
-            <Col>
-            <div className="m-3"><p className="text-uppercase text-left">{selected.process}</p></div>
-            </Col>
           </Row>
         </Col>
       </Row>
