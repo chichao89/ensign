@@ -4,7 +4,7 @@ import CardDeck from "react-bootstrap/CardDeck";
 import { Nav } from 'react-bootstrap';
 import {NavLink } from 'react-router-dom'
 import {id} from './NavigationBar'
-import CoffeeDetails from './CoffeeDetails'
+import ECommerceDetails from './ECommerceDetails'
 
 function Home(props) {
  
@@ -28,7 +28,7 @@ function Home(props) {
     return (
       <div>
         <button className="rounded-circle float-right" onClick={()=>handleClick(!isToggleOn)}>X</button>
-        <CoffeeDetails
+        <ECommerceDetails
           warn={isToggleOn && myKey}
           product={props.product}
         />

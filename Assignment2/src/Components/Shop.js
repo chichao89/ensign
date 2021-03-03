@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import CoffeeDetails from "./CoffeeDetails";
+import ECommerceDetails from "./ECommerceDetails";
 
 class Shop extends Component {
   constructor(props) {
@@ -52,7 +52,7 @@ class Shop extends Component {
           >
             X
           </button>
-          <CoffeeDetails
+          <ECommerceDetails
             warn={this.state.isToggleOn && this.state.key}
             product={this.props.product}
           />

@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import Jumbotron  from "./Jumbotron";
-import Product from "../Data/Product.json";
 import Home from "./Home";
 import Shop from "./Shop";
 
 
-class Coffee extends Component {
+class ECommerce extends Component {
   constructor(props) {
     let url = props.location.pathname;
     const urlpath = parseInt((url.match(/(\d+)/g)));
@@ -53,4 +52,4 @@ class Coffee extends Component {
   }
 }
 
-export default Coffee;
+export default ECommerce;

@@ -6,7 +6,7 @@ import { Nav } from 'react-bootstrap';
 import {NavLink } from 'react-router-dom'
 import Navigation from './NavigationBar'
 
-function CoffeeDetails(props) {
+function ECommerceDetails(props) {
 
 
     let [final, setFinal] = useState(1)
@@ -34,7 +34,7 @@ function CoffeeDetails(props) {
     arrayItem.push(more)
     cartLength = cartTotal
     
-    const coffeeDetails = props.product.filter(key => (key.id === props.warn)).map(selected => (
+    const Ecommerce = props.product.filter(key => (key.id === props.warn)).map(selected => (
         <Row key={selected.id}>
           <Col lg={5}>
           <img className="img-fluid" src={selected.image} alt={selected.image}/>
@@ -105,9 +105,9 @@ function CoffeeDetails(props) {
               <div><Nav.Link className="mx-auto mw-25 w-25" as={NavLink} to={`/Cart/`}><button className="btn btn-dark btn btn-outline-light">Go to Cart</button></Nav.Link></div>              
               </div>
             }
-            {coffeeDetails}
+            {Ecommerce}
         </>
     )
 }
 
-export default CoffeeDetails
+export default ECommerceDetails
