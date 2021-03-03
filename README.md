@@ -1,5 +1,7 @@
 # ensign
 # Assignment 1
+-To run
+use a code editor to run the html file via liveserver or normal browser.
 -Design 
 Assumptions - I have based on what i understand about components and tried to replicate as similar as closely as I could. The contents are hardcoded and the images are refer from internet address links for simplicity purposes.
 1. I have created with a format that is meant to be responsive friendly. There will be a container, followed by a header section and the card sections.  The css will be targeted into this 3 different components and the idea is to only try to reuse as much classes as possible.
